@@ -8,7 +8,7 @@ public class Shopper {
     private String lastName;
     private String streetAddress;
     private String city;
-    private String county;
+    private String country;
     private String phoneNumber;
 
     public static Shopper standardShopper() {
@@ -22,7 +22,7 @@ public class Shopper {
         lastName = "User";
         streetAddress = "1 Main Street";
         city = "Exeter";
-        county = "United Kingdom";
+        country = "United Kingdom";
         phoneNumber = "0712345678";
     }
 
@@ -47,7 +47,7 @@ public class Shopper {
     }
 
     public String getCounty() {
-        return county;
+        return country;
     }
 
     public String getPhoneNumber() {
