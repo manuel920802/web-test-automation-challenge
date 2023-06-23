@@ -16,7 +16,7 @@ public class MakeAPurchase extends UIInteractionSteps {
         $(InputField.withNameOrId("lastname")).type(shopper.getLastName());
         $(InputField.withNameOrId("street[0]")).type(shopper.getStreetAddress());
         $(InputField.withNameOrId("city")).type(shopper.getCity());
-        $(Dropdown.withNameOrId("country_id")).selectByVisibleText(shopper.getCounty());
+        $(Dropdown.withNameOrId("country_id")).selectByVisibleText(shopper.getCountry());
         $(InputField.withNameOrId("telephone")).type(shopper.getPhoneNumber());
         $(RadioButton.withValue("flatrate_flatrate")).click();
         withTimeoutOf(Duration.ofSeconds(15)).waitForAbsenceOf(".loader");

@@ -46,7 +46,7 @@ public class Shopper {
         return city;
     }
 
-    public String getCounty() {
+    public String getCountry() {
         return country;
     }
 
