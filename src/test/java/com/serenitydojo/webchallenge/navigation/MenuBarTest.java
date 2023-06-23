@@ -25,6 +25,6 @@ class MenuBarTest {
         List<String> menuItems = navigate.findAll(TOP_LEVEL_MENU_ENTRIES).texts();
 
         // Check that the items are the expected ones
-        assertThat(menuItems).contains("What's New","Women", "Men","Gear","Training","Sale");
+        assertThat(menuItems).contains("What's New","Women","Men","Gear","Training","Sale");
     }
 }
